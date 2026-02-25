@@ -23,9 +23,7 @@ export function HeroD() {
           {/* 彩色 Badge */}
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-indigo-200/80 bg-white/80 px-5 py-2.5 shadow-sm backdrop-blur-sm">
             <Sparkles className="h-4 w-4 text-amber-500" />
-            <span className="text-sm font-medium text-indigo-700">
-              基于 Tiptap + Yjs · AI 驱动
-            </span>
+            <span className="text-sm font-medium text-indigo-700">基于 Tiptap + Yjs · AI 驱动</span>
           </div>
 
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
@@ -37,8 +35,7 @@ export function HeroD() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600">
-            智能协作编辑器，集成 AI 续写、实时多人协作、RAG 知识库。
-            让写作更高效，让灵感触手可及。
+            智能协作编辑器，集成 AI 续写、实时多人协作、RAG 知识库。 让写作更高效，让灵感触手可及。
           </p>
 
           {/* 快捷能力展示 */}

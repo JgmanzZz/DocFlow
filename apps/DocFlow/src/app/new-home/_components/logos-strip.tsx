@@ -1,6 +1,13 @@
 import { LOGOS } from './constants';
 
-const logoColors = ['text-sky-500', 'text-blue-600', 'text-emerald-600', 'text-amber-500', 'text-slate-700', 'text-cyan-500'];
+const logoColors = [
+  'text-sky-500',
+  'text-blue-600',
+  'text-emerald-600',
+  'text-amber-500',
+  'text-slate-700',
+  'text-cyan-500',
+];
 
 /** Logos: 信任背书 Logo 条 */
 export function LogosStrip() {

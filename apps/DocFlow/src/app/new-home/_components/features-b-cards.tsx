@@ -20,7 +20,9 @@ export function FeaturesBCards() {
               key={feature.title}
               className={`rounded-2xl border border-slate-200 p-6 shadow-sm transition-all hover:shadow-md ${feature.bg ? `${feature.bg}/30` : 'bg-white'}`}
             >
-              <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${feature.color ?? 'from-slate-500 to-slate-600'} text-white`}>
+              <div
+                className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${feature.color ?? 'from-slate-500 to-slate-600'} text-white`}
+              >
                 <feature.icon className="h-6 w-6" />
               </div>
               <h3 className="mt-4 text-lg font-semibold text-slate-900">{feature.title}</h3>

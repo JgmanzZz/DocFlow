@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { FileText, Github, Newspaper, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
-import { cn } from '@/utils/cn';
 import { SITE_CONFIG } from './constants';
+
+import { cn } from '@/utils/cn';
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);

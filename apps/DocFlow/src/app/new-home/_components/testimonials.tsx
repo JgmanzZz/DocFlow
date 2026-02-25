@@ -14,28 +14,36 @@ export function Testimonials() {
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t, i) => {
-            const colors = ['from-indigo-500 to-violet-500', 'from-amber-500 to-orange-500', 'from-emerald-500 to-teal-500'];
+            const colors = [
+              'from-indigo-500 to-violet-500',
+              'from-amber-500 to-orange-500',
+              'from-emerald-500 to-teal-500',
+            ];
             const avatarColor = colors[i % colors.length];
+
             return (
-            <blockquote
-              key={t.author}
-              className={cn(
-                'rounded-2xl border border-slate-200 bg-white p-6 shadow-sm',
-                'transition-shadow hover:shadow-md hover:border-indigo-100',
-              )}
-            >
-              <p className="text-slate-700">&ldquo;{t.quote}&rdquo;</p>
-              <footer className="mt-4 flex items-center gap-3">
-                <div className={`flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br ${avatarColor} text-sm font-semibold text-white`}>
-                  {t.author.slice(0, 1)}
-                </div>
-                <div>
-                  <cite className="not-italic font-semibold text-slate-900">{t.author}</cite>
-                  <p className="text-sm text-slate-500">{t.role}</p>
-                </div>
-              </footer>
-            </blockquote>
-          );})}
+              <blockquote
+                key={t.author}
+                className={cn(
+                  'rounded-2xl border border-slate-200 bg-white p-6 shadow-sm',
+                  'transition-shadow hover:shadow-md hover:border-indigo-100',
+                )}
+              >
+                <p className="text-slate-700">&ldquo;{t.quote}&rdquo;</p>
+                <footer className="mt-4 flex items-center gap-3">
+                  <div
+                    className={`flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br ${avatarColor} text-sm font-semibold text-white`}
+                  >
+                    {t.author.slice(0, 1)}
+                  </div>
+                  <div>
+                    <cite className="not-italic font-semibold text-slate-900">{t.author}</cite>
+                    <p className="text-sm text-slate-500">{t.role}</p>
+                  </div>
+                </footer>
+              </blockquote>
+            );
+          })}
         </div>
       </div>
     </section>

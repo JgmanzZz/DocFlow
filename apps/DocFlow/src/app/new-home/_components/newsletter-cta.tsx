@@ -8,9 +8,7 @@ export function NewsletterCTA() {
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white/20">
           <Mail className="h-7 w-7 text-white" />
         </div>
-        <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl">
-          获取最新动态
-        </h2>
+        <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl">获取最新动态</h2>
         <p className="mx-auto mt-3 max-w-md text-violet-100">
           关注 GitHub、加入社区，第一时间获取 DocFlow 的更新与技巧
         </p>

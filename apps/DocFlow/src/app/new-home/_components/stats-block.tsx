@@ -10,7 +10,11 @@ export function StatsBlock() {
         <div className="grid gap-8 sm:grid-cols-3">
           {STATS.map((stat, i) => (
             <div key={stat.label} className="text-center">
-              <div className={`text-4xl font-bold sm:text-5xl ${statColors[i] ?? 'text-slate-900'}`}>{stat.value}</div>
+              <div
+                className={`text-4xl font-bold sm:text-5xl ${statColors[i] ?? 'text-slate-900'}`}
+              >
+                {stat.value}
+              </div>
               <div className="mt-2 text-sm font-medium text-slate-600">{stat.label}</div>
             </div>
           ))}

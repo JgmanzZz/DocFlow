@@ -14,9 +14,7 @@ export function Integrations() {
   return (
     <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-6 py-20">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-center text-2xl font-bold text-slate-900 sm:text-3xl">
-          技术栈集成
-        </h2>
+        <h2 className="text-center text-2xl font-bold text-slate-900 sm:text-3xl">技术栈集成</h2>
         <p className="mx-auto mt-3 max-w-lg text-center text-slate-600">
           基于主流技术构建，易于扩展与定制
         </p>

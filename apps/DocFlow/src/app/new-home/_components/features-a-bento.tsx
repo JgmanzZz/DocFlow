@@ -21,7 +21,9 @@ export function FeaturesABento() {
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex h-full flex-col justify-between rounded-2xl border border-indigo-100 bg-indigo-50/30 p-8 transition-shadow hover:shadow-lg hover:shadow-indigo-500/10">
               <div>
-                <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${first.color ?? 'from-slate-600 to-slate-700'} text-white`}>
+                <div
+                  className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${first.color ?? 'from-slate-600 to-slate-700'} text-white`}
+                >
                   <first.icon className="h-6 w-6" />
                 </div>
                 <h3 className="mt-4 text-xl font-semibold text-slate-900">{first.title}</h3>
@@ -32,15 +34,21 @@ export function FeaturesABento() {
 
           {/* 小卡片 */}
           <div className="flex flex-col gap-4">
-            <div className={`flex-1 rounded-2xl border border-emerald-100 bg-emerald-50/50 p-6 transition-shadow hover:shadow-md`}>
-              <div className={`flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br ${second.color ?? 'from-slate-500 to-slate-600'} text-white`}>
+            <div
+              className={`flex-1 rounded-2xl border border-emerald-100 bg-emerald-50/50 p-6 transition-shadow hover:shadow-md`}
+            >
+              <div
+                className={`flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br ${second.color ?? 'from-slate-500 to-slate-600'} text-white`}
+              >
                 <second.icon className="h-5 w-5" />
               </div>
               <h3 className="mt-3 font-semibold text-slate-900">{second.title}</h3>
               <p className="mt-1 text-sm text-slate-600">{second.description}</p>
             </div>
             <div className="flex-1 rounded-2xl border border-amber-100 bg-amber-50/50 p-6 transition-shadow hover:shadow-md">
-              <div className={`flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br ${third.color ?? 'from-slate-500 to-slate-600'} text-white`}>
+              <div
+                className={`flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br ${third.color ?? 'from-slate-500 to-slate-600'} text-white`}
+              >
                 <third.icon className="h-5 w-5" />
               </div>
               <h3 className="mt-3 font-semibold text-slate-900">{third.title}</h3>
@@ -54,7 +62,9 @@ export function FeaturesABento() {
               key={feature.title}
               className={`rounded-2xl border border-slate-200 p-6 transition-shadow hover:shadow-md ${feature.bg ? `${feature.bg}/50` : 'bg-white'}`}
             >
-              <div className={`flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br ${feature.color ?? 'from-slate-500 to-slate-600'} text-white`}>
+              <div
+                className={`flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br ${feature.color ?? 'from-slate-500 to-slate-600'} text-white`}
+              >
                 <feature.icon className="h-5 w-5" />
               </div>
               <h3 className="mt-3 font-semibold text-slate-900">{feature.title}</h3>

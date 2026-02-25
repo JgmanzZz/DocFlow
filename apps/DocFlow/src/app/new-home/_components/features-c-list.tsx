@@ -1,6 +1,15 @@
 import { FEATURES } from './constants';
 
-const iconColors = ['from-indigo-500 to-violet-500', 'from-emerald-500 to-teal-500', 'from-amber-500 to-orange-500', 'from-blue-500 to-cyan-500', 'from-rose-500 to-pink-500', 'from-violet-500 to-purple-500', 'from-cyan-500 to-sky-500', 'from-orange-500 to-amber-500'];
+const iconColors = [
+  'from-indigo-500 to-violet-500',
+  'from-emerald-500 to-teal-500',
+  'from-amber-500 to-orange-500',
+  'from-blue-500 to-cyan-500',
+  'from-rose-500 to-pink-500',
+  'from-violet-500 to-purple-500',
+  'from-cyan-500 to-sky-500',
+  'from-orange-500 to-amber-500',
+];
 
 /** FeaturesC: 左右交替列表布局 */
 export function FeaturesCList() {
@@ -23,7 +32,9 @@ export function FeaturesCList() {
               }`}
             >
               <div className="flex flex-1 justify-center md:justify-end">
-                <div className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${iconColors[i] ?? 'from-slate-500 to-slate-600'} text-white`}>
+                <div
+                  className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${iconColors[i] ?? 'from-slate-500 to-slate-600'} text-white`}
+                >
                   <feature.icon className="h-8 w-8" />
                 </div>
               </div>

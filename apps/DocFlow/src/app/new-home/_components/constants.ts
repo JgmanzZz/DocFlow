@@ -21,7 +21,7 @@ export interface FeatureItem {
   title: string;
   description: string;
   color?: string; // Tailwind gradient e.g. 'from-indigo-500 to-violet-500'
-  bg?: string;   // e.g. 'bg-indigo-50'
+  bg?: string; // e.g. 'bg-indigo-50'
 }
 
 export const FEATURES: FeatureItem[] = [

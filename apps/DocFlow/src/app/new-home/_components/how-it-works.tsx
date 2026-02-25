@@ -37,9 +37,7 @@ export function HowItWorks() {
         <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           三步开始使用 {SITE_CONFIG.name}
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-center text-slate-600">
-          从注册到协作，只需几分钟
-        </p>
+        <p className="mx-auto mt-4 max-w-xl text-center text-slate-600">从注册到协作，只需几分钟</p>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-3">
           {steps.map((step, i) => (

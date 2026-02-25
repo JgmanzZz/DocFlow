@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { FileText, Zap, Users, Sparkles } from 'lucide-react';
 
-import { cn } from '@/utils/cn';
 import { SITE_CONFIG } from './constants';
+
+import { cn } from '@/utils/cn';
 
 const btnPrimary =
   'inline-flex items-center justify-center rounded-md px-6 py-3 text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors';
